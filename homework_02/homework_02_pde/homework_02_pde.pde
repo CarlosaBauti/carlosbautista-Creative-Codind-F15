@@ -23,7 +23,7 @@ void draw(){
   stroke(0);
 }
   beginShape();
-  fill(255,255,255,0);
+  noFill();
   strokeWeight(10);
   stroke(10);
   curveVertex(175,0);
@@ -32,6 +32,7 @@ void draw(){
   curveVertex(75,125);
   curveVertex(75,250);
   curveVertex(85,400);
+  strokeWeight(5);
   curveVertex(200,400);
   curveVertex(350,410);
   curveVertex(362,315);
