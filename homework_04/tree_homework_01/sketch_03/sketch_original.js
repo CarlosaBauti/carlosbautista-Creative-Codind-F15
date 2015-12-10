@@ -1,4 +1,6 @@
-var theta;
+var theta,
+posX2=windowWidth/2,
+posY2=windowHeight;
 
 function setup() {
   createCanvas(windowWidth,windowHeight);
@@ -6,13 +8,14 @@ function setup() {
 function draw() {
   background(255);
   frameRate(30);
-  stroke(0);
-  var firstRot=(mouseX/windowWidth)*120;
-  theta=radians(firstRot);
-  translate(windowWidth*0.5,height);
-  line(0,0,0,-100);
-  translate(0,-100);
-  branch(180);
+  push();
+  translate(0,0);
+  fill(75,25,100);
+  rect (0,0,posX2,posY2);
+  line(0,0,40,40);
+  pop();
+  createRect(width);
+  
 }
 function branch(h){
   h *=0.66;
@@ -32,4 +35,6 @@ function branch(h){
     branch(h);
     pop();
   }
-}
+
+
+var firstRot=(mouseX/windowWidth)*120;

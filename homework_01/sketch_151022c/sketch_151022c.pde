@@ -5,7 +5,7 @@
   int displaceVert=10;
   int displaceHor=5;
   int displaceDiag=25;
-  int displaceDiag2=50;
+
   background(0);
   smooth(8);
   
@@ -29,7 +29,7 @@
   fill(0,30,200);
   rect (width*0.5,0,width*0.25,height*0.5);
   for (int i=0; i<height; i++){
-  line(0,(displaceDiag*i),width*0.5,(displaceDiag2*i));
+  line(0,(displaceDiag*i),width*0.5,(displaceDiag*i));
   }
   popMatrix();
   
