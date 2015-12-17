@@ -12,7 +12,7 @@ function setup() {
   text.style("color", "#999999");
   text.style("font-size", "18pt");
   text.style("padding", "10px");
-  canvas = createCanvas(windowWidth, windowHeight/6);
+  canvas = createCanvas(windowWidth, windowHeight/3);
 
   img1.position(190, 50);
   canvas.position(0, windowHeight);
